@@ -1,0 +1,4 @@
+src/.env
+vector_store_hash.txt
+vector_store
+venv

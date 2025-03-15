@@ -1,0 +1,23 @@
+# Vector Store
+vector_store:
+  type: "FAISS"  
+  persist_directory: "vector_store"
+
+# Document Processing
+document_processing:
+  chunk_size: 300
+  chunk_overlap: 50
+  separators: ["\n\n", "\n", " ", ""]
+
+# Embeddings
+embeddings:
+  model: "sentence-transformers/multi-qa-MiniLM-L6-cos-v1"
+  
+# LLM
+llm:
+  provider: "huggingface"
+  model: "mistralai/Mistral-7B-Instruct-v0.2" 
+
+# Data
+data_directory: "data"
+
