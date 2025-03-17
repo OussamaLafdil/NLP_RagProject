@@ -40,7 +40,7 @@ class ChatSystem:
         elif llm_provider == "google" :
             # Gemini for llm
             self.llm = ChatGoogleGenerativeAI(
-                model="gemini-1.5-pro",
+                model=self.config['llm']['model'],
                 temperature=0.7,
                 max_tokens=2000,
             )
@@ -99,10 +99,9 @@ class ChatSystem:
         
         #  chat template
         chat_prompt = ChatPromptTemplate.from_messages([
-            ("system", """You are an AI assistant that answers questions based on the documents provided.
-            Use only the information from the provided context to answer the question.
-            If you cannot find the answer in the context, say "I don't have enough information to answer this question."
-            Be concise, accurate, and helpful.
+            ("system", """You are a helpful AI assistant that answers questions based on the provided context.
+            You are an expert in Pytorch coding.
+            Generate Pytorch code when it is relevant.   
             
             Context:
             {context}

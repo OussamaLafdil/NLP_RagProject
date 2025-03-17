@@ -52,13 +52,14 @@ class QASystem:
         """Create the question-answering chain."""
         qa_prompt = ChatPromptTemplate.from_template("""
         You are a helpful AI assistant that answers questions based on the provided context.
-        
+        You are an expert in Pytorch coding.
+        Generate Pytorch code when it is relevant.        
         Context:
         {context}
         
         Question: {input}
         
-        Answer the question based only on the provided context. If you cannot find the answer in the context, say "I don't have enough information to answer this question."
+        Answer the question and provide code example"
         """)
         
         # Create document template

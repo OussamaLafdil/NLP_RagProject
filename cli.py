@@ -41,7 +41,7 @@ def search_documents(args):
     for i, result in enumerate(results):
         print(f"Result {i+1}: [Score: {result['score']:.4f}]")
         print(f"Source: {result['metadata']['source']}")
-        print(f"Content: {result['content'][:200]}...")  
+        print(f"Content: {result['content'][:400]}...")  
         print("-" * 80)
     
     return 0

@@ -1,3 +1,5 @@
-What are the different modules of the option Génie Industriel?
-What is the total Of ECTS of the option Sciences de données et digitalisation?
-What are the steps of Process Data Use Case (CRISP - DM Model)?
+How do I create a tensor filled with zeros in PyTorch?
+What is the purpose of the torch.nn.Linear module?
+How can I move a tensor to the GPU in PyTorch?
+What is the difference between torch.Tensor and torch.tensor?
+How do I calculate the cross-entropy loss between two tensors in PyTorch?

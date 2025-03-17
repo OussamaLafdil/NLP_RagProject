@@ -14,7 +14,7 @@ This project implements a Retrieval Augmented Generation (RAG) system for questi
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/rag-system.git 
+   git clone https://github.com/OussamaLafdil/NLP_RagProject
    cd rag-system
    ```
 
